@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 html {
     font-family: Great Vibes, serif;
+    scrollbar-width: 0;
+    --webkit-scrollbar-width: 0;
+    overflow-x: hidden;
 }
 
-h2 {
+h2, h3 {
     text-align: center;
 }
 
 
-
 .menu {
-    width: 100%;
-    max-width: 600px;
+    width: 90vw;
+    max-width: 550px;
     margin: 0 auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.8);
@@ -41,16 +43,26 @@ h2 {
 
 .gallery {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-item {
+    text-align: center;
 }
 
 .gallery-item img {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
+    width: 265px;
+    height: 230px;
+    object-fit: cover;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
+    html {
+        max-width: 600px;
+    }
+
     .gallery-item {
         display: flex;
         justify-content: center;
