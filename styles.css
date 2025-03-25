@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+html {
+    font-family: Great Vibes, serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+.menu {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item .name {
+    flex: 1;
+}
+
+.menu-item .price {
+    flex: 0 0 auto;
+    margin-left: 10px;
+}
+
+.gallery {
+    width: 100%;
+}
+
+.gallery-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+
+@media (max-width: 600px) {
+    .gallery-item {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+    }
+}
