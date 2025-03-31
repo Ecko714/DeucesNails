@@ -212,7 +212,7 @@ h2, h3 {
     }
 
     .gallery-item img {
-        width: 90% !important;
+        width: 90vw !important;
         height: 500px;
     }
 
